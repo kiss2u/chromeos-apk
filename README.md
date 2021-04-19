@@ -15,14 +15,15 @@ chromeos-apk
 
 <img src="http://v14d.com/g/multiple.png" width="250px" />
 <img src="http://v14d.com/g/WinApk.jpg" width="250px" />
->See the [custrom ARChon runtime guide](archon.md) to run apps on other operating systems besides Chrome OS.
+
+>See the [Custom ARChon runtime guide](archon.md) to run apps on other operating systems besides Chrome OS.
 
 
 ### [Video Demo](https://www.youtube.com/watch?v=O-yFLqp_sXs)
 
 ## Quick Demo for Chrome OS
 - Download an official app, [such as Evernote](https://chrome.google.com/webstore/detail/evernote/dhfolfjkgpeaojbiicgheljefkfbbfkc), from the Chrome Web Store.
-- Then download this open source game: [2048.APK Game](https://github.com/vladikoff/chromeos-apk/releases/download/v1.1.0/com.uberspot.a2048.android-OFFICIAL.zip) by [Uberspot](https://github.com/uberspot/2048-android) and load it as an unpacked extension. Press "Launch", ignore warnings.
+- Then download this open source game: [2048.APK Game](https://github.com/vladikoff/chromeos-apk/releases/download/v1.1.0/com.uberspot.a2048.android-OFFICIAL.zip) by [Uberspot](https://github.com/uberspot/2048-android) and load it as an unpacked extension. Go to chrome://apps and launch it there, ignore warnings.
 
 ## Setup for Chrome OS / App Conversion
 > Conversion Tool Tested on OS X, Windows and Ubuntu. You can also [convert APKs manually](manually-convert.md).
@@ -70,9 +71,10 @@ If you get a `Failed to parse package name in the APK.` error, then you will hav
 
 ## Note
 
-**This is a proof of concept. You can run up to 4 Android applications right now with the regular runtime.
- By default the `chromeos-apk` tool replaces the Vine app. Read [the multiple apps manual](multiple-apps.md)
- to load more than one application at a time. To load unlimited number of apps read the [ARChon runtime guide](archon.md)**
+**Chrome OS:** With Chrome 38+ you can now side load as many applications as you want. If you have older apps that
+were created using `chromeos-apk` tool then re-convert them or remove the `"key"` option from `manifest.json`.
+
+**Windows, Linux and OS X:** To load unlimited number of apps on you need a custom runtime, see the [ARChon runtime guide](archon.md) for details.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -84,7 +86,7 @@ SOFTWARE.
 
 ## Tested Apps
 
-Read [the manifest guide](manifest.md) to tweak applications. Androud `Menu` key is accessible using `ctrl` + `ESC`.
+Read [the manifest guide](manifest.md) to tweak applications. Android `Menu` key is accessible using `ctrl` + `ESC`.
 
 - Flipboard, Flixster, Twitter - Works.
 - Pandora - Works [[Screenshot](http://i.imgur.com/0d8XvXr.png)]
